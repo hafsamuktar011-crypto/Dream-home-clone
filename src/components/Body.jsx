@@ -33,17 +33,28 @@ function Body() {
           <h1 className="text-2xl font-bold mb-4">
             We Help You To Find Your Dream Home
           </h1>
-          <span className="text-gray-700">
+          <span>
             From cozy cottages to luxurious estates, our dedicated team guides
             you through every step of the journey, ensuring your dream home
             becomes a reality.
           </span>
-          <div className="flex">
-            <span>8K+ <p>houses available</p></span>
-            <span>6K+ <p>houses sold</p></span>
-            <span>2K+ <p>Trusted agents</p></span>
-            
-          </div>
+          <div className="flex flex-row justify-around w-full">
+  <div className="flex flex-col">
+    <p className="font-bold text-2xl">8K+</p>
+    <p >Houses Available</p>
+  </div>
+
+  <div className="flex flex-col ">
+    <p className="font-bold text-2xl">6K+</p>
+    <p >Houses Sold</p>
+  </div>
+
+  <div className="flex flex-col">
+    <p className="font-bold text-2xl">2K+</p>
+    <p >Trusted Agents</p>
+  </div>
+</div>
+
         </div>
       </div>
     </div>
