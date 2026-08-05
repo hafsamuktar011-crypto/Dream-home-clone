@@ -3,9 +3,7 @@
 
 :root {
   --text: #440E03;
-  --bg: #fff;
-  --shadow:
-    rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
+  --shadow:rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
 
   --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
   --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
@@ -27,13 +25,13 @@ h1,
 h2 {
   font-family: var(--heading);
   font-weight: 500;
-  color: var(--text);
 }
 
 h1 {
   font-size: 56px;
   letter-spacing: -1.68px;
   margin: 32px 0;
+  text-shadow: var(--shadow);
   @media (max-width: 1024px) {
     font-size: 36px;
     margin: 20px 0;
@@ -48,10 +46,12 @@ h2 {
     font-size: 20px;
   }
 }
-p {
+/* p {
   margin: 0;
+} */
+Nav{
+  background-color: #D59385;
 }
-
 
 
 

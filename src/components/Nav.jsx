@@ -5,9 +5,9 @@ import { CiSearch } from "react-icons/ci";
 
 function Nav() {
   return (
-    <div className="flex items-center justify-between p-5 ">
+    <div className="flex items-center justify-between p-5 bg-[#F8EEEC]">
 
-      <img src={logo} alt="logo" className="w-10 h-9" />
+      <img src={logo} alt="logo" className="w-15 h-9" />
 
       <div className="flex space-x-6">
         <a href="">Home</a>
