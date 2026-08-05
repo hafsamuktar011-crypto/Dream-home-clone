@@ -38,6 +38,12 @@ function Body() {
             you through every step of the journey, ensuring your dream home
             becomes a reality.
           </span>
+          <div className="flex">
+            <span>8K+ <p>houses available</p></span>
+            <span>6K+ <p>houses sold</p></span>
+            <span>2K+ <p>Trusted agents</p></span>
+            
+          </div>
         </div>
       </div>
     </div>
