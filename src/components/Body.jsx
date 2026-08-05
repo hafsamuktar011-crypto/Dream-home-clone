@@ -26,7 +26,7 @@ function Body() {
           <TbCreativeCommonsNc />
           <a href="">Category</a>
         </div>
-        <button className="bg-black text-white px-3 py-1 rounded">Sign Up</button>
+        <button className=" text-white px-3 py-1 rounded">Sign Up</button>
       </div>
 
       <div className="flex flex-row items-center justify-center w-4/5 space-x-10">
@@ -42,7 +42,7 @@ function Body() {
             you through every step of the journey, ensuring your dream home
             becomes a reality.
           </span>
-          <div className="flex flex-row justify-around w-full">
+          <div className="flex flex-row gap-7 ">
   <div className="flex flex-col">
     <p className="font-bold text-2xl">8K+</p>
     <p >Houses Available</p>
@@ -63,28 +63,28 @@ function Body() {
       </div>
       <div className="flex flex-col items-center justify-center  ">
         <h1>Why choose us</h1>
-        <p className='max-w-2xl leading-relaxed'>Elevating Your Home Buying Experience with Expertise, Integrity, 
-          <br/>and Unmatched Personalized Service</p>
+        <p className='max-w-2xl'>Elevating Your Home Buying Experience with Expertise, Integrity,</p> 
+          <p>and Unmatched Personalized Service</p>
 
       </div>
-      <div className="flex">
-        <div>
-        <ImLocation2 />
+      <div className="flex space-x-2 m-4">
+        <div className='bg-[#E1B1A8] w-74 p-6 rounded-lg'>
+        <ImLocation2 className='bg-white w-8 h-10 rounded' />
         <h2>Expert Guidance</h2>
         <p>Benefit from our team's seasoned expertise for a smooth buying experience</p>
         </div>
-       <div>
-        <FaUserEdit />
+       <div className='bg-[#E1B1A8] w-74 p-6 rounded-lg'>
+        <FaUserEdit className='bg-white w-8 h-10 rounded' />
          <h2>Personalized Service</h2>
         <p>Our services adapt to your unique needs, making your journey stress-free.</p>
        </div>
-       <div>
-         <MdAssignment />
+       <div className='bg-[#E1B1A8] w-74 p-6 rounded-lg'>
+         <MdAssignment className='bg-white w-8 h-10 rounded'/>
          <h2>Transparent Process</h2>
          <p>Stay informed with our clear and honest approach to buying your home</p>
        </div>
-       <div>
-       <FaHandshakeSimple />
+       <div className='bg-[#E1B1A8] w-74 p-6 rounded-lg'>
+       <FaHandshakeSimple className='bg-white w-8 h-10 rounded'/>
         <h2>Exceptional Support</h2>
         <p>Providing peace of mind with our responsive and attentive customer service</p>
        </div>
