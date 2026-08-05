@@ -3,6 +3,10 @@ import { IoLocationSharp } from "react-icons/io5";
 import { AiTwotoneHome } from "react-icons/ai";
 import { TbCreativeCommonsNc } from "react-icons/tb";
 import houseModel from "../sources/Mask group.png"
+import { MdAssignment } from "react-icons/md";
+import { ImLocation2 } from "react-icons/im";
+import { FaUserEdit } from "react-icons/fa";
+import { FaHandshakeSimple } from "react-icons/fa6";
 
 function Body() {
   return (
@@ -56,6 +60,34 @@ function Body() {
 </div>
 
         </div>
+      </div>
+      <div className="flex flex-col items-center justify-center  ">
+        <h1>Why choose us</h1>
+        <p className='max-w-2xl leading-relaxed'>Elevating Your Home Buying Experience with Expertise, Integrity, 
+          <br/>and Unmatched Personalized Service</p>
+
+      </div>
+      <div className="flex">
+        <div>
+        <ImLocation2 />
+        <h2>Expert Guidance</h2>
+        <p>Benefit from our team's seasoned expertise for a smooth buying experience</p>
+        </div>
+       <div>
+        <FaUserEdit />
+         <h2>Personalized Service</h2>
+        <p>Our services adapt to your unique needs, making your journey stress-free.</p>
+       </div>
+       <div>
+         <MdAssignment />
+         <h2>Transparent Process</h2>
+         <p>Stay informed with our clear and honest approach to buying your home</p>
+       </div>
+       <div>
+       <FaHandshakeSimple />
+        <h2>Exceptional Support</h2>
+        <p>Providing peace of mind with our responsive and attentive customer service</p>
+       </div>
       </div>
     </div>
   )
