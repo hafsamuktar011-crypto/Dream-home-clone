@@ -1,58 +1,62 @@
-import React from 'react'
-import logo from "../sources/logo.png"
-import { AiOutlineUser } from 'react-icons/ai'
+import React, { useState } from "react";
+import logo from "../sources/logo.png";
+import { AiOutlineUser, AiOutlineMenu } from "react-icons/ai";
 import { CiSearch } from "react-icons/ci";
-import { useState } from 'react';
-import { AiOutlineMenu } from "react-icons/ai";
+import { IoClose } from "react-icons/io5";
 
 function Nav() {
-   const [OpenMenu,setOpenMenu]=useState(false)
-
-
+  const [openMenu, setOpenMenu] = useState(false);
 
   return (
-    <div className="flex items-center justify-between p-5 bg-[#F8EEEC]">
-    
-          {OpenMenu && (
-  <div className="relative sm:hidden w-full h-screen bg-white shadow-md flex flex-col">
-                <X size={24} onClick={()=>{setOpenMenu(true)}}
-                className='absolute top-4 right-4 cursor-pointer border-b' />
-                <br />
-    <div className="flex space-x-6">
-        <a href="">Home</a>
-        <a href="">Services</a>
-        <a href="">Agents</a>
-        <a href="">Contact</a>
-      </div>
-  </div>
-)}
-      <img src={logo} alt="logo" className="w-15 h-9" />
+    <nav className="bg-[#F8EEEC] px-5 py-4">
+      <div className="flex items-center justify-between">
 
-      <div className="flex space-x-6 sm:hidden">
-        <a href="">Home</a>
-        <a href="">Services</a>
-        <a href="">Agents</a>
-        <a href="">Contact</a>
+        <img src={logo} alt="logo" className="w-15 h-9" />
+
+        {/* Desktop Menu */}
+        <div className="hidden sm:flex space-x-6">
+          <a href="">Home</a>
+          <a href="">Services</a>
+          <a href="">Agents</a>
+          <a href="">Contact</a>
+        </div>
+
+        <div className="flex items-center space-x-4">
+          <CiSearch className="text-xl" />
+          <AiOutlineUser className="text-xl" />
+
+          <button className=" text-white px-3 py-1 rounded">
+            Sign Up
+          </button>
+
+          {/* Mobile Menu Icon */}
+          <button
+            className="sm:hidden"
+            onClick={() => setOpenMenu(!openMenu)}
+          >
+            <AiOutlineMenu className="w-6 h-6" />
+          </button>
+        </div>
       </div>
 
-      <div className="flex items-center space-x-4">
-        <CiSearch className="text-xl" />
-        <AiOutlineUser className="text-xl" />
-        <button className=" text-white px-3 py-1 rounded">
-          Sign Up
-        </button>
-      </div>
-    
-       <div className="sm:hidden">
-        <AiOutlineMenu  className="cursor-pointer w-6 h-6" 
-  onClick={()=>{
-       setOpenMenu(!openMenu)
-  }}/>
-  
-      </div>
-      
-    </div>
-  )
+      {/* Mobile Menu */}
+      {openMenu && (
+        <div className="sm:hidden mt-4 relative bg-white shadow-md rounded p-4">
+          <IoClose
+            className="absolute right-3 top-3 text-2xl cursor-pointer"
+            onClick={() => setOpenMenu(false)}
+          />
+
+          <div className="flex flex-col space-y-4 mt-8">
+            <a href="">Home</a>
+            <a href="">Services</a>
+            <a href="">Agents</a>
+            <a href="">Contact</a>
+          </div>
+        </div>
+      )}
+    </nav>
+  );
 }
 
-export default Nav
+export default Nav;
