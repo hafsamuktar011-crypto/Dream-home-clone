@@ -1,7 +1,5 @@
 import React from 'react'
-import { IoLocationSharp } from "react-icons/io5";
-import { AiTwotoneHome } from "react-icons/ai";
-import { TbCreativeCommonsNc } from "react-icons/tb";
+
 import houseModel from "../sources/Mask group.png"
 import { MdAssignment } from "react-icons/md";
 import { ImLocation2 } from "react-icons/im";
@@ -12,22 +10,7 @@ function Body() {
   return (
     <div className="flex flex-col items-center relative">
       
-      <div className="bg-[#E1B1A8] p-6 w-2/3 flex flex-row items-center justify-around 
-      rounded-md shadow-md mb-10 -mt-10 z-20">
-        <div className="flex items-center space-x-2">
-          <IoLocationSharp />
-          <a href="">Location</a>
-        </div>
-        <div className="flex items-center space-x-2">
-          <AiTwotoneHome />
-          <a href="">Type</a>
-        </div>
-        <div className="flex items-center space-x-2">
-          <TbCreativeCommonsNc />
-          <a href="">Category</a>
-        </div>
-        <button className=" text-white px-3 py-1 rounded">Sign Up</button>
-      </div>
+      
 
       <div className="flex flex-row items-center justify-center w-4/5 space-x-10">
 
