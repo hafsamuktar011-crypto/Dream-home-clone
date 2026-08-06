@@ -31,10 +31,10 @@ function Nav() {
 
           {/* Mobile Menu Icon */}
           <button
-            className="sm:hidden"
+            className="sm:hidden "
             onClick={() => setOpenMenu(!openMenu)}
           >
-            <AiOutlineMenu className="w-6 h-6" />
+            <AiOutlineMenu className="w-6 h-6 text-white" />
           </button>
         </div>
       </div>
