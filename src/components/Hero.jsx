@@ -7,9 +7,10 @@ import { TbCreativeCommonsNc } from "react-icons/tb";
 
 function Hero() {
   return (
-    <div className="flex flex-row items-center p-7 bg-[#F8EEEC] z-10">
+    <div className=" p-7 bg-[#F8EEEC]">
 
-      <div className="ml-5 w-2/5">
+     <div className='flex flex-row items-center '>
+          <div className="ml-5 w-2/5">
         <h1 className="mb-4">Find Your  <p>Dream Home</p></h1>
         <p className="mb-6 ">
           Explore our curated selection of exquisite properties meticulously
@@ -27,8 +28,10 @@ function Hero() {
           className="absolute bottom-0 left-10 transform -translate-x-1/2 w-2/3"
              />
           </div>
+     </div>
+      
         <div className="bg-[#E1B1A8] p-10 w-2/3 flex flex-row items-center justify-around 
-              rounded-md shadow-md mb-10 -mt-20 z-20">
+              rounded-md shadow-md mb-10 -mt-20 ">
                 <div className="flex items-center space-x-2">
                   <IoLocationSharp />
                   <a href="">Location</a>
