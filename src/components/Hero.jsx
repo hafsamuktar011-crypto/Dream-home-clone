@@ -16,7 +16,7 @@ function Hero() {
           Explore our curated selection of exquisite properties meticulously
           tailored to your unique dream home vision
         </p>
-        <button className="text-white px-4 py-2 rounded">
+        <button className=" px-4 py-2 rounded">
           Sign Up
         </button>
       </div>
@@ -25,13 +25,13 @@ function Hero() {
             <img 
           src={vector} 
           alt="vector" 
-          className="absolute bottom-0 left-10 transform -translate-x-1/2 w-2/3"
+          className="absolute bottom-0 left-10 transform -translate-x-1/2 w-2/3 z-10"
              />
           </div>
      </div>
       
-        <div className="bg-[#E1B1A8] p-10 w-2/3 flex flex-row items-center justify-around 
-              rounded-md shadow-md mb-10 -mt-20 ">
+        <div className="relative bg-[#E1B1A8] p-20 w-2/3 flex  items-center justify-around z-20 
+              rounded-md shadow-md mb-10 mx-auto -mt-40">
                 <div className="flex items-center space-x-2">
                   <IoLocationSharp />
                   <a href="">Location</a>
