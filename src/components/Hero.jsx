@@ -32,17 +32,20 @@ function Hero() {
       
         <div className="relative bg-[#E1B1A8] p-20 w-2/3 flex  items-center justify-around z-20 
               rounded-md shadow-md mb-10 mx-auto -mt-40">
-                <div className="flex items-center space-x-2">
-                  <IoLocationSharp />
-                  <a href="">Location</a>
+                <div className="flex items-center space-x-2 relative">
+                  <IoLocationSharp  className='absolute ml-45'/>
+                  <input type="text" placeholder='Location' 
+                  className='bg-amber-50 py-1.5 px-3 rounded-md'/>
                 </div>
                 <div className="flex items-center space-x-2">
-                  <AiTwotoneHome />
-                  <a href="">Type</a>
+                  <AiTwotoneHome className='absolute ml-45' />
+                  <input type="text" placeholder='Type' 
+                    className='bg-amber-50 py-1.5 px-3 rounded-md'/>
                 </div>
                 <div className="flex items-center space-x-2">
-                  <TbCreativeCommonsNc />
-                  <a href="">Category</a>
+                  <TbCreativeCommonsNc className='absolute ml-45' />
+                  <input type="text" placeholder='Category'
+                    className='bg-amber-50 py-1.5 px-3 rounded-md' />
                 </div>
                 <button className=" text-white px-3 py-1 rounded">Sign Up</button>
               </div>
