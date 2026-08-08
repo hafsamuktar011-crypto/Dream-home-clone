@@ -1,13 +1,14 @@
 import React from 'react'
 import houseModel from "../sources/Mask group.png"
-import residence1 from '../sources/Mask group (1).png'
-import residence2 from '../sources/Mask group (2).png'
-import residence3 from '../sources/Mask group (3).png'
+
 import { MdAssignment } from "react-icons/md";
 import { ImLocation2 } from "react-icons/im";
 import { FaUserEdit } from "react-icons/fa";
 import { FaHandshakeSimple } from "react-icons/fa6";
 import { IoBedOutline } from "react-icons/io5";
+import { TbCakeRoll } from "react-icons/tb";
+
+import { Residences } from '../assets/Residence.js'
 
 function Body() {
   return (
@@ -52,7 +53,7 @@ function Body() {
           <p>and Unmatched Personalized Service</p>
 
       </div>
-      <div className="flex space-x-2 m-4">
+      <div className="flex space-x-2 m-8">
         <div className='bg-[#E1B1A8] w-74 p-6 rounded-lg'>
         <ImLocation2 className='bg-white w-8 h-10 rounded' />
         <h2>Expert Guidance</h2>
@@ -74,7 +75,56 @@ function Body() {
         <p>Providing peace of mind with our responsive and attentive customer service</p>
        </div>
       </div>
-     
+
+      <>
+        <h1 className='text-center m-10'>Our Popular Residences</h1>
+        <div className="flex space-x-20 m-4" >
+          {Residences.map((residence) => (
+    <div key={residence.id} className="w-90 rounded-lg shadow-md">
+      <img
+        src={residence.img}
+        alt={residence.location}
+        className="w-full rounded-t-lg"
+      />
+
+      <div className="p-4 bg-[#E1B1A8] rounded-b-lg">
+        <div className="flex items-center gap-3 justify-center ">
+          <ImLocation2/>
+        <h2 className="font-bold">
+          {residence.location}
+        </h2>
+        </div>
+        
+         <div className='flex justify-around space-x-27'>
+        <div className="flex items-center gap-2">
+          <IoBedOutline />
+          <p>{residence.Rooms}</p>
+        </div>
+        <div className="flex items-center gap-2">
+          <TbCakeRoll />
+          <p>{residence.covering_area}</p>
+
+        </div>
+        </div>
+
+        <div className="flex items-center justify-around space-x-17 p-1">
+         <button>Sign up</button>
+         <p className="font-bold">
+          ${residence.price}
+        </p>
+        </div>
+        
+      </div>
+
+    </div>
+  ))}
+        </div>
+  
+</>
+
+<div >
+  <h1 className='text-center'>What People Say About Dwello</h1>
+</div>
 
     </div>
   )

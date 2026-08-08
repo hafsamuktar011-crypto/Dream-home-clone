@@ -1,5 +1,5 @@
 import residence1 from '../sources/Mask group (1).png'
-import residence2 from '../sources/Mask group (2).png'
+import residence2 from '../sources/Mask group (3).png'
 import residence3 from '../sources/Mask group (3).png'
 
 export const Residences=[
