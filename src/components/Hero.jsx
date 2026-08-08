@@ -4,12 +4,13 @@ import vector from '../sources/Vector 1.png'
 import { IoLocationSharp } from "react-icons/io5";
 import { AiTwotoneHome } from "react-icons/ai";
 import { TbCreativeCommonsNc } from "react-icons/tb";
+import { useState } from 'react';
 
 function Hero() {
   return (
     <div className=" p-7 bg-[#F8EEEC]">
 
-     <div className='flex flex-row items-center '>
+     <div className='flex flex-row items-center max-sm:flex-col '>
           <div className="ml-5 w-2/5">
         <h1 className="mb-4">Find Your  <p>Dream Home</p></h1>
         <p className="mb-6 ">
@@ -31,7 +32,7 @@ function Hero() {
      </div>
       
         <div className="relative bg-[#E1B1A8] p-20 w-2/3 flex  items-center justify-around z-20 
-              rounded-md shadow-md mb-10 mx-auto -mt-40">
+              rounded-md shadow-md mb-10 mx-auto -mt-40  max-sm:-mt-15 max-sm:flex-col max-sm:gap-3.5 ">
                 <div className="flex items-center space-x-2 relative">
                   <IoLocationSharp  className='absolute ml-45'/>
                   <input type="text" placeholder='Location' 
@@ -47,7 +48,7 @@ function Hero() {
                   <input type="text" placeholder='Category'
                     className='bg-[#F8EEEC] py-1.5 px-3 rounded-md' />
                 </div>
-                <button className=" text-white px-3 py-1 rounded">Sign Up</button>
+                <button className=" px-3 py-1 rounded">Sign Up</button>
               </div>
           
            
