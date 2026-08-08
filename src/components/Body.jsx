@@ -1,5 +1,4 @@
 import React from 'react'
-
 import houseModel from "../sources/Mask group.png"
 import { MdAssignment } from "react-icons/md";
 import { ImLocation2 } from "react-icons/im";
@@ -10,8 +9,6 @@ function Body() {
   return (
     <div className="flex flex-col items-center relative">
       
-      
-
       <div className="flex flex-row items-center justify-center w-4/5 space-x-10">
 
         <img src={houseModel} alt="house model" className="w-1/2 rounded-lg" />
