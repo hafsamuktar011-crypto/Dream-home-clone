@@ -1,17 +1,22 @@
 import React from 'react'
 import houseModel from "../sources/Mask group.png"
+import residence1 from '../sources/Mask group (1).png'
+import residence2 from '../sources/Mask group (2).png'
+import residence3 from '../sources/Mask group (3).png'
 import { MdAssignment } from "react-icons/md";
 import { ImLocation2 } from "react-icons/im";
 import { FaUserEdit } from "react-icons/fa";
 import { FaHandshakeSimple } from "react-icons/fa6";
+import { IoBedOutline } from "react-icons/io5";
 
 function Body() {
   return (
-    <div className="flex flex-col items-center z-10">
+    <div className="flex flex-col items-center z-10 pt-20">
       
       <div className="flex flex-row items-center justify-center w-4/5 space-x-10">
 
-        <img src={houseModel} alt="house model" className="w-1/2 rounded-lg" />
+        <img src={houseModel} alt="house model" 
+        className="w-1/2 rounded-lg" />
 
         <div className="w-1/2">
           <h1 className="text-2xl font-bold mb-4">
@@ -69,6 +74,8 @@ function Body() {
         <p>Providing peace of mind with our responsive and attentive customer service</p>
        </div>
       </div>
+     
+
     </div>
   )
 }

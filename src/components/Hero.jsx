@@ -8,11 +8,11 @@ import { useState } from 'react';
 
 function Hero() {
   return (
-    <div className="bg-[#F8EEEC]">
+    <div className="bg-[#F8EEEC] relative pb-20">
 
      <div className='flex flex-row items-center max-sm:flex-col '>
           <div className="ml-5 w-2/5">
-        <h1 className="mb-4">Find Your  <p>Dream Home</p></h1>
+        <h1 className="">Find Your  <p>Dream Home</p></h1>
         <p className="mb-6 ">
           Explore our curated selection of exquisite properties meticulously
           tailored to your unique dream home vision
@@ -22,7 +22,7 @@ function Hero() {
         </button>
       </div>
           <div className='relative w-3/5  '>
-             <img src={heroImg} alt="hero" className="w-full h-auto" />
+             <img src={heroImg} alt="hero" className="w-full" />
             <img 
           src={vector} 
           alt="vector" 
@@ -32,9 +32,10 @@ function Hero() {
      </div>
       
       
-        <div className="relative bg-[#E1B1A8] p-7 w-2/3 flex  items-center justify-around z-20 
-              rounded-md shadow-md  mx-auto -mt-60 
-               max-sm:-mt-15 max-sm:flex-col max-sm:gap-3.5 ">
+       <div className="absolute -bottom-10 left-1/2 transform -translate-x-1/2 
+    bg-[#E1B1A8] p-7 w-2/3 flex items-center justify-around z-20 
+    rounded-md shadow-md max-sm:flex-col max-sm:gap-3.5">
+
                 <div className="flex items-center space-x-2 relative">
                   <IoLocationSharp  className='absolute ml-45'/>
                   <input type="text" placeholder='Location' 
