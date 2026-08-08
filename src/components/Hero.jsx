@@ -8,7 +8,7 @@ import { useState } from 'react';
 
 function Hero() {
   return (
-    <div className=" p-7 bg-[#F8EEEC]">
+    <div className="bg-[#F8EEEC]">
 
      <div className='flex flex-row items-center max-sm:flex-col '>
           <div className="ml-5 w-2/5">
@@ -21,18 +21,20 @@ function Hero() {
           Sign Up
         </button>
       </div>
-          <div className='relative w-3/5 h-auto '>
-             <img src={heroImg} alt="hero" className="w-full h-auto rounded-lg" />
+          <div className='relative w-3/5  '>
+             <img src={heroImg} alt="hero" className="w-full h-auto" />
             <img 
           src={vector} 
           alt="vector" 
-          className="absolute bottom-0 left-10 transform -translate-x-1/2 w-2/3 z-10"
+          className="absolute bottom-38 left-45  transform -translate-x-2/3 w-1/5"
              />
           </div>
      </div>
       
-        <div className="relative bg-[#E1B1A8] p-20 w-2/3 flex  items-center justify-around z-20 
-              rounded-md shadow-md mb-10 mx-auto -mt-40  max-sm:-mt-15 max-sm:flex-col max-sm:gap-3.5 ">
+      
+        <div className="relative bg-[#E1B1A8] p-7 w-2/3 flex  items-center justify-around z-20 
+              rounded-md shadow-md  mx-auto -mt-60 
+               max-sm:-mt-15 max-sm:flex-col max-sm:gap-3.5 ">
                 <div className="flex items-center space-x-2 relative">
                   <IoLocationSharp  className='absolute ml-45'/>
                   <input type="text" placeholder='Location' 

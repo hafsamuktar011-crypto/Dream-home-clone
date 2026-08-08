@@ -7,7 +7,7 @@ import { FaHandshakeSimple } from "react-icons/fa6";
 
 function Body() {
   return (
-    <div className="flex flex-col items-center relative">
+    <div className="flex flex-col items-center z-10">
       
       <div className="flex flex-row items-center justify-center w-4/5 space-x-10">
 

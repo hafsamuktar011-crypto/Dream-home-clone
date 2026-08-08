@@ -8,7 +8,7 @@ function Nav() {
   const [openMenu, setOpenMenu] = useState(false);
 
   return (
-    <nav className="bg-[#F8EEEC] px-5 py-4 relative h-18 w-full">
+    <nav className="bg-[#F8EEEC] font-bold px-5 py-4 relative h-18 w-full">
       <div className=" h-18 flex items-center justify-between ">
 
         <img src={logo} alt="logo" className="w-15 h-9" />
@@ -22,7 +22,7 @@ function Nav() {
         </div>
 
         <div className="flex items-center space-x-4">
-          <CiSearch className="text-xl" />
+          <CiSearch className="text-xl " />
           <AiOutlineUser className="text-xl" />
 
           <button className=" px-3 py-1 rounded">
