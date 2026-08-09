@@ -11,10 +11,10 @@ function Nav() {
     <nav className="bg-[#F8EEEC] font-bold px-5 py-4 relative h-18 w-full">
       <div className=" h-18 flex items-center justify-between ">
 
-        <img src={logo} alt="logo" className="w-15 h-9" />
+        <img src={logo} alt="logo" className="w-15 h-9 max-md:pr-2.5" />
 
         {/* Desktop Menu */}
-        <div className="hidden sm:flex space-x-6">
+        <div className="hidden sm:flex space-x-6 max-md:space-x-2">
           <a href="">Home</a>
           <a href="">Services</a>
           <a href="">Agents</a>
@@ -25,7 +25,7 @@ function Nav() {
           <CiSearch className="text-xl " />
           <AiOutlineUser className="text-xl" />
 
-          <button className=" px-3 py-1 rounded">
+          <button>
             Sign Up
           </button>
 
