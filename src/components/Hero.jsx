@@ -8,7 +8,7 @@ import { useState } from 'react';
 
 function Hero() {
   return (
-    <div className="bg-[#F8EEEC] relative pb-20">
+<div className="bg-[#F8EEEC] relative pb-20">
 
      <div className='flex flex-row items-center max-sm:flex-col '>
           <div className="ml-5 w-2/5">
@@ -16,25 +16,27 @@ function Hero() {
         <p className="mb-6 ">
           Explore our curated selection of exquisite properties meticulously
           tailored to your unique dream home vision
-        </p>
+        </p>    
         <button className=" px-4 py-2 rounded">
           Sign Up
         </button>
       </div>
           <div className='relative w-3/5  '>
-             <img src={heroImg} alt="hero" className="w-full" />
+             <img src={heroImg} alt="hero" className="w-full max-sm:hidden" />
             <img 
           src={vector} 
           alt="vector" 
-          className="absolute bottom-38 left-45  transform -translate-x-2/3 w-1/5"
+          className="absolute bottom-38 left-45  transform -translate-x-2/3 w-1/5
+          max-sm:hidden"
              />
           </div>
      </div>
       
       
        <div className="absolute -bottom-10 left-1/2 transform -translate-x-1/2 
-    bg-[#E1B1A8] p-7 w-2/3 flex items-center justify-around z-20 
-    rounded-md shadow-md max-sm:flex-col max-sm:gap-3.5">
+    bg-[#E1B1A8] p-7 w-2/3 flex items-center justify-around z-20  rounded-md shadow-md 
+    max-sm:flex-col max-sm:gap-3.5
+    max-md:flex max-md:flex-col max-md:space-y-3 max-md:relative">
 
                 <div className="flex items-center space-x-2 relative">
                   <IoLocationSharp  className='absolute ml-45'/>
