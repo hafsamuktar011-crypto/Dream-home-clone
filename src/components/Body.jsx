@@ -130,8 +130,9 @@ function Body() {
   
 </>
 
-<div >
+<div className='bg-[#F8EEEC] w-full'>
   <h1 className='text-center'>What People Say <br/>About Dwello</h1>
+  
 </div>
 
     </div>
