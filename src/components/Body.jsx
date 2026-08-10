@@ -134,21 +134,50 @@ function Body() {
 <div className='bg-[#F8EEEC] w-full'>
   <h1 className='text-center'>What People Say <br/>About Dwello</h1>
   <div>
-    {testimonials.map((testimonial)=>(
-      <div key={testimonial.id}>
-        <img src={testimonial.img} alt="" />
-        <div>
-          <img src={testimonial.profile} alt="" />
-          <h3>{testimonial.name}</h3>
-          <span>{testimonial.location}</span>
-          <div>
-            <span>{testimonial.icon}</span>
-            <span>{testimonial.rank}</span>
+   {testimonials.map((testimonial) => {
+  const Star = testimonial.icon;
+
+  return (
+    <div
+      key={testimonial.id}
+      className="bg-[#E1B1A8] rounded-lg p-5 w-[400px] min-w-[400px] shadow-md"
+    >
+      {/* Top section */}
+      <div className="flex items-center justify-between gap-4">
+
+        {/* Profile + name/location */}
+        <div className="flex items-center gap-3">
+          <img
+            src={testimonial.profile}
+            alt={testimonial.name}
+            className="w-12 h-12 rounded-full object-cover"
+          />
+
+          <div className="flex flex-col">
+            <h2 className="font-bold">
+              {testimonial.name}
+            </h2>
+
+            <p className="text-sm">
+              {testimonial.location}
+            </p>
           </div>
-          <p>{testimonial.comment}</p>
+        </div>
+
+        {/* Rating */}
+        <div className="flex items-center gap-1">
+          <Star className="text-xl" />
+          <span>{testimonial.rank}</span>
         </div>
       </div>
-    ))}
+
+      {/* Comment */}
+      <p className="mt-5 leading-relaxed">
+        {testimonial.comment}
+      </p>
+    </div>
+  );
+})}
   </div>
 
 </div>
