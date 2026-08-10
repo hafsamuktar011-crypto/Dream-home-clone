@@ -17,9 +17,10 @@ function Body() {
       <div className="flex flex-row items-center justify-center w-4/5 space-x-10">
 
         <img src={houseModel} alt="house model" 
-        className="w-1/2 rounded-lg" />
+        className="w-1/2 rounded-lg max-sm:hidden max-md:hidden" />
 
-        <div className="w-1/2">
+        <div className="w-1/2 max-sm:w-full 
+        max-md:w-full ">
           <h1 className="text-2xl font-bold mb-4">
             We Help You To Find Your Dream Home
           </h1>
@@ -47,29 +48,34 @@ function Body() {
 
         </div>
       </div>
-      <div className="flex flex-col items-center justify-center  ">
+      <div className="flex flex-col items-center justify-center ">
         <h1>Why choose us</h1>
         <p className='max-w-2xl'>Elevating Your Home Buying Experience with Expertise, Integrity,</p> 
           <p>and Unmatched Personalized Service</p>
 
       </div>
-      <div className="flex space-x-2 m-8">
-        <div className='bg-[#E1B1A8] w-74 p-6 rounded-lg'>
+      <div className="flex space-x-2 m-8
+       max-md:flex-col max-md:gap-3 max-md:items-center ">
+        <div className='bg-[rgb(225,177,168)] p-6 rounded-lg
+        w-full max-w-md '>
         <ImLocation2 className='bg-white w-8 h-10 rounded' />
         <h2>Expert Guidance</h2>
         <p>Benefit from our team's seasoned expertise for a smooth buying experience</p>
         </div>
-       <div className='bg-[#E1B1A8] w-74 p-6 rounded-lg'>
+       <div className='bg-[#E1B1A8]  p-6 rounded-lg
+       w-full max-w-md'>
         <FaUserEdit className='bg-white w-8 h-10 rounded' />
          <h2>Personalized Service</h2>
         <p>Our services adapt to your unique needs, making your journey stress-free.</p>
        </div>
-       <div className='bg-[#E1B1A8] w-74 p-6 rounded-lg'>
+       <div className='bg-[#E1B1A8] p-6 rounded-lg
+       w-full max-w-md'>
          <MdAssignment className='bg-white w-8 h-10 rounded'/>
          <h2>Transparent Process</h2>
          <p>Stay informed with our clear and honest approach to buying your home</p>
        </div>
-       <div className='bg-[#E1B1A8] w-74 p-6 rounded-lg'>
+       <div className='bg-[#E1B1A8]  p-6 rounded-lg
+       w-full max-w-md'>
        <FaHandshakeSimple className='bg-white w-8 h-10 rounded'/>
         <h2>Exceptional Support</h2>
         <p>Providing peace of mind with our responsive and attentive customer service</p>
@@ -78,9 +84,11 @@ function Body() {
 
       <>
         <h1 className='text-center m-10'>Our Popular Residences</h1>
-        <div className="flex space-x-20 m-4" >
+        <div className="flex gap-6 m-4 
+        max-md:flex-col max-md:items-center
+         " >
           {Residences.map((residence) => (
-    <div key={residence.id} className="w-90 rounded-lg shadow-md">
+    <div key={residence.id} className="w-90 rounded-lg shadow-md shrink-0">
       <img
         src={residence.img}
         alt={residence.location}
@@ -123,7 +131,7 @@ function Body() {
 </>
 
 <div >
-  <h1 className='text-center'>What People Say About Dwello</h1>
+  <h1 className='text-center'>What People Say <br/>About Dwello</h1>
 </div>
 
     </div>

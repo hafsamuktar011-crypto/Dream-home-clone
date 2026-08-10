@@ -41,7 +41,7 @@ function Hero() {
                 <div className="flex items-center space-x-2 relative">
                   <IoLocationSharp  className='absolute ml-45'/>
                   <input type="text" placeholder='Location' 
-                  className='bg-[#F8EEEC] py-1.5 px-3 rounded-md'/>
+                  className='bg-[#F8EEEC] py-1.5 px-3 rounded-md '/>
                 </div>
                 <div className="flex items-center space-x-2">
                   <AiTwotoneHome className='absolute ml-45' />
