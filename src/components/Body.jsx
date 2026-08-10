@@ -85,26 +85,23 @@ function Body() {
 
       <>
         <h1 className='text-center m-10'>Our Popular Residences</h1>
-        <div className="flex gap-6 m-4 
-        max-md:flex-col max-md:items-center
-         " >
+        <div className="flex flex-col lg:flex-row gap-6 m-4 justify-center items-center
+         p-4 w-full" >
           {Residences.map((residence) => (
-    <div key={residence.id} className="w-90 rounded-lg shadow-md shrink-0">
+    <div key={residence.id} className="w-full lg:w-96 rounded-lg shadow-md shrink-0">
       <img
         src={residence.img}
         alt={residence.location}
-        className="w-full rounded-t-lg"
+        className="w-full h-60 object-cover rounded-t-lg"
       />
 
       <div className="p-4 bg-[#E1B1A8] rounded-b-lg">
-        <div className="flex items-center gap-3 justify-center ">
+        <div className="flex items-center gap-3 ">
           <ImLocation2/>
-        <h2 className="font-bold">
-          {residence.location}
-        </h2>
+        <h2 className="font-bold"> {residence.location}</h2>
         </div>
         
-         <div className='flex justify-around space-x-27'>
+         <div className='flex justify-between mt-2'>
         <div className="flex items-center gap-2">
           <IoBedOutline />
           <p>{residence.Rooms}</p>
@@ -116,7 +113,7 @@ function Body() {
         </div>
         </div>
 
-        <div className="flex items-center justify-around space-x-17 p-1">
+        <div className="flex items-center justify-between mt-3">
          <button>Sign up</button>
          <p className="font-bold">
           ${residence.price}
@@ -133,14 +130,14 @@ function Body() {
 
 <div className='bg-[#F8EEEC] w-full'>
   <h1 className='text-center'>What People Say <br/>About Dwello</h1>
-  <div className='flex gap-8 overflow-auto justify-center items-center p-4'>
+  <div className='flex  flex-col gap-8 lg:flex-row justify-center items-center p-4'>
   {testimonials.map((testimonial) => {
   const Star = testimonial.icon;
 
   return (
     <div
       key={testimonial.id}
-      className="w-[400px] min-w-[400px] shrink-0"
+      className="w-full lg:w-96 shrink-0 "
     >
       <img
         src={testimonial.img}
@@ -149,7 +146,7 @@ function Body() {
       />
       <div className="bg-[#E1B1A8] p-5 rounded-b-lg">
 
-        <div className="flex items-center justify-between">
+        <div className="flex items-center justify-between  ">
 
           <div className="flex items-center gap-3">
             <img
