@@ -9,6 +9,7 @@ import { IoBedOutline } from "react-icons/io5";
 import { TbCakeRoll } from "react-icons/tb";
 
 import { Residences } from '../assets/Residence.js'
+import { testimonials } from '../assets/Testimonials.js';
 
 function Body() {
   return (
@@ -132,7 +133,24 @@ function Body() {
 
 <div className='bg-[#F8EEEC] w-full'>
   <h1 className='text-center'>What People Say <br/>About Dwello</h1>
-  
+  <div>
+    {testimonials.map((testimonial)=>(
+      <div key={testimonial.id}>
+        <img src={testimonial.img} alt="" />
+        <div>
+          <img src={testimonial.profile} alt="" />
+          <h3>{testimonial.name}</h3>
+          <span>{testimonial.location}</span>
+          <div>
+            <span>{testimonial.icon}</span>
+            <span>{testimonial.rank}</span>
+          </div>
+          <p>{testimonial.comment}</p>
+        </div>
+      </div>
+    ))}
+  </div>
+
 </div>
 
     </div>

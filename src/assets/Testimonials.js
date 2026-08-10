@@ -14,7 +14,7 @@ export const testimonials=[
      profile:photo3,
      name:"Sarah Nguyen",
      location:"San Francisco",
-     icon: {CiStar},
+     icon: CiStar,
      rank:5.0,
      comment:"Dwello truly cares about their clients. They listened to my needs and preferences and helped me find the perfect home in the Bay Area. Their professionalism and attention to detail are unmatched"
 
@@ -24,7 +24,7 @@ export const testimonials=[
      profile:photo2,
      name:"Micahel Rodriruex",
      location:"San Diego",
-     icon: {CiStar},
+     icon: CiStar,
      rank:4.5,
      comment:"I had a fantastic experience working with Dwello. Their expertise and personalized service exceeded my expectations. I found my dream home quickly and smoothly. Highly recommended!"        
     },
@@ -33,7 +33,7 @@ export const testimonials=[
      profile:photo1,
      name:"Emily Johnson",
      location:"Los Angeles",
-     icon: {CiStar},
+     icon: CiStar,
      rank:5.0,
      comment:"Dwello made my dream of owning a home a reality! Their team provided exceptional support and guided me through every step of the process. I couldn't be happier with my new home!"        
     }
