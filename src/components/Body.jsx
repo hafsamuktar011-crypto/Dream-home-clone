@@ -133,48 +133,54 @@ function Body() {
 
 <div className='bg-[#F8EEEC] w-full'>
   <h1 className='text-center'>What People Say <br/>About Dwello</h1>
-  <div>
-   {testimonials.map((testimonial) => {
+  <div className='flex gap-8 overflow-auto justify-center items-center p-4'>
+  {testimonials.map((testimonial) => {
   const Star = testimonial.icon;
 
   return (
     <div
       key={testimonial.id}
-      className="bg-[#E1B1A8] rounded-lg p-5 w-[400px] min-w-[400px] shadow-md"
+      className="w-[400px] min-w-[400px] shrink-0"
     >
-      {/* Top section */}
-      <div className="flex items-center justify-between gap-4">
+      <img
+        src={testimonial.img}
+        alt={testimonial.name}
+        className="w-full h-60 object-cover rounded-t-lg"
+      />
+      <div className="bg-[#E1B1A8] p-5 rounded-b-lg">
 
-        {/* Profile + name/location */}
-        <div className="flex items-center gap-3">
-          <img
-            src={testimonial.profile}
-            alt={testimonial.name}
-            className="w-12 h-12 rounded-full object-cover"
-          />
+        <div className="flex items-center justify-between">
 
-          <div className="flex flex-col">
-            <h2 className="font-bold">
-              {testimonial.name}
-            </h2>
+          <div className="flex items-center gap-3">
+            <img
+              src={testimonial.profile}
+              alt={testimonial.name}
+              className="w-12 h-12 rounded-full object-cover"
+            />
 
-            <p className="text-sm">
-              {testimonial.location}
-            </p>
+            <div className="flex flex-col">
+              <h2 className="font-bold">
+                {testimonial.name}
+              </h2>
+
+              <p className="text-sm">
+                {testimonial.location}
+              </p>
+            </div>
           </div>
+
+          <div className="flex items-center gap-1">
+            <Star className="text-xl fill-amber-500" />
+            <span>{testimonial.rank}</span>
+          </div>
+
         </div>
 
-        {/* Rating */}
-        <div className="flex items-center gap-1">
-          <Star className="text-xl" />
-          <span>{testimonial.rank}</span>
-        </div>
+        <p className="mt-5 leading-relaxed">
+          {testimonial.comment}
+        </p>
+
       </div>
-
-      {/* Comment */}
-      <p className="mt-5 leading-relaxed">
-        {testimonial.comment}
-      </p>
     </div>
   );
 })}
