@@ -5,16 +5,16 @@ import { FaInstagram } from "react-icons/fa"
 import { FaSquareXTwitter } from "react-icons/fa6"
 
 const icons = {
-  facebook: <AiOutlineFacebook />,
-  instagram: <FaInstagram />,
-  twitter: <FaSquareXTwitter />
+  Facebook: <AiOutlineFacebook />,
+  Instagram: <FaInstagram />,
+  Twitter: <FaSquareXTwitter />
 }
 
 const footerLink = {
   About: ["Our Story", "Careers", "Our Teams", "Resources"],
   Support: ["FAQ", "Contact Us", "Help Center", "Terms of Services"],
   "Find Us": ["Events", "Locations", "Newsletter"],
-  "Our Socials": ["instagram", "facebook", "twitter"]
+  "Our Socials": ["Instagram", "Facebook", "Twitter"]
 }
 
 function Footer() {
