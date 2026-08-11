@@ -7,6 +7,9 @@ import { FaUserEdit } from "react-icons/fa";
 import { FaHandshakeSimple } from "react-icons/fa6";
 import { IoBedOutline } from "react-icons/io5";
 import { TbCakeRoll } from "react-icons/tb";
+import { MdLocalPostOffice } from "react-icons/md";
+import { RiVerifiedBadgeLine } from "react-icons/ri";
+
 
 import { Residences } from '../assets/Residence.js'
 import { testimonials } from '../assets/Testimonials.js';
@@ -182,6 +185,23 @@ function Body() {
   );
 })}
   </div>
+
+</div>
+<div className='text-center leading-relaxed mt-15'>
+  <h1>Do You Have Any Questions?<br/>Get Help From Us</h1>
+<div className='flex lg:flex-row gap-10 p-4'>
+<p className='flex items-center gap-2'> <RiVerifiedBadgeLine />Chat live with our support team</p>
+<p className='flex items-center gap-2'><RiVerifiedBadgeLine />Browse our FAQ</p>
+</div>
+<div className='flex lg:flex-row justify-between items-center gap-3'>
+  <div className="relative w-full max-w-md">
+    <MdLocalPostOffice className="absolute left-3 top-1/2 transform -translate-y-1/2 text-[#440E03]" />
+<input type="text" placeholder='Enter your email address...'
+className='bg-[#E1B1A8] pl-10 pr-3 py-2 rounded-md w-full' />
+  </div>
+
+<button>Submit</button>
+</div>
 
 </div>
 
