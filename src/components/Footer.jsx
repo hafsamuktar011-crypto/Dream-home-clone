@@ -24,7 +24,23 @@ function Footer() {
       <img src={logo} alt="Dwello logo" />
       <p>Bringing you closer to your dream home, one click at a time.</p>
      </div>
-     
+     {Object.entries(footerLink).map(([category,items])=>{
+      <div key={items}>
+        <h2>{category}</h2>
+        <ul>
+          {items.map((item)=>(
+            <li key={item}>
+              {category === "Our Socials" ? (
+                <a href=""></a> : (
+                  <a href="">(item)</a>
+                )
+              )}
+            </li>
+          ))}
+        </ul>
+      </div>
+     })
+}
     </footer>
   
   )
