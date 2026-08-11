@@ -19,43 +19,65 @@ const footerLink = {
 
 function Footer() {
   return (
-    <footer className='flex justify-between items-center mt-36 p-52 bg-[#E1B1A8] h-full'>
+    <footer className="bg-[#E1B1A8] w-full px-6 py-10">
 
-      <div className='leading-relaxed'>
-        <img src={logo} alt="Dwello logo" />
-        <p>
-          Bringing you closer to your dream home, one click at a time.
-        </p>
+  <div className="
+    max-w-7xl mx-auto
+    grid grid-cols-1
+    md:grid-cols-2
+    lg:grid-cols-5
+    gap-8
+  ">
+
+    <div className="lg:col-span-2">
+      <img
+        src={logo}
+        alt="Dwello logo"
+        className="w-32"
+      />
+
+      <p className="mt-4 max-w-sm break-words">
+        Bringing you closer to your dream home, one click at a time.
+      </p>
+    </div>
+
+    {Object.entries(footerLink).map(([category, items]) => (
+      <div key={category} className="w-full">
+
+        <h2 className="font-bold mb-4">
+          {category}
+        </h2>
+
+        <ul className="space-y-2">
+
+          {items.map((item) => (
+            <li key={item}>
+
+              {category === "Our Socials" ? (
+                <a
+                  href=""
+                  className="flex items-center gap-2"
+                >
+                  {icons[item]}
+                  <span>{item}</span>
+                </a>
+              ) : (
+                <a href="">
+                  {item}
+                </a>
+              )}
+
+            </li>
+          ))}
+
+        </ul>
+
       </div>
+    ))}
 
-      {Object.entries(footerLink).map(([category, items]) => (
-        <div key={category}>
+  </div>
 
-          <h2>{category}</h2>
-
-          <ul>
-            {items.map((item) => (
-              <li key={item}>
-
-                {category === "Our Socials" ? (
-                  <a href="" className="flex items-center gap-2">
-                    {icons[item]}
-                    <span>{item}</span>
-                  </a>
-                ) : (
-                  <a href="">
-                    {item}
-                  </a>
-                )}
-
-              </li>
-            ))}
-          </ul>
-
-        </div>
-      ))}
-
-    </footer>
+</footer>
   )
 }
 
