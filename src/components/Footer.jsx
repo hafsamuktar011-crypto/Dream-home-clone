@@ -20,7 +20,11 @@ const footerLink={
 function Footer() {
   return (
     <footer>
-
+     <div>
+      <img src={logo} alt="Dwello logo" />
+      <p>Bringing you closer to your dream home, one click at a time.</p>
+     </div>
+     
     </footer>
   
   )
