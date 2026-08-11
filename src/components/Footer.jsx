@@ -38,8 +38,9 @@ function Footer() {
               <li key={item}>
 
                 {category === "Our Socials" ? (
-                  <a href="">
+                  <a href="" className="flex items-center gap-2">
                     {icons[item]}
+                    <span>{item}</span>
                   </a>
                 ) : (
                   <a href="">
