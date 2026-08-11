@@ -19,9 +19,9 @@ const footerLink = {
 
 function Footer() {
   return (
-    <footer>
+    <footer className='flex justify-between items-center mt-36 p-52 bg-[#E1B1A8] h-full'>
 
-      <div>
+      <div className='leading-relaxed'>
         <img src={logo} alt="Dwello logo" />
         <p>
           Bringing you closer to your dream home, one click at a time.
